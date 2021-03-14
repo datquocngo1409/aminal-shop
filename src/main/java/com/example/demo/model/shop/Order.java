@@ -6,6 +6,7 @@ import javax.persistence.*;
 import java.util.List;
 
 @Entity
+@Table(name = "tbl_Order")
 public class Order {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

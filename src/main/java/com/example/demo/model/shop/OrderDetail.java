@@ -5,6 +5,7 @@ import com.example.demo.model.User;
 import javax.persistence.*;
 
 @Entity
+@Table(name = "tbl_OrderDetail")
 public class OrderDetail {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
