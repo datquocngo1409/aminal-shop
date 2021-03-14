@@ -56,6 +56,7 @@ public class JwtAuthenController {
         }
         if (isExit == false) {
             User userSave = new User(user.getUsername(), user.getPassword());
+            userSave.setRole(user.getRole());
             userService.createUser(userSave);
             return ResponseEntity.ok(userDetailsService.save(user));
         } else {
