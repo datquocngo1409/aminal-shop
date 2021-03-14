@@ -17,9 +17,9 @@ public class Item {
 
     private String imageUrl;
 
-    private int count = 0;
+    private int count;
 
-    private String from;
+    private String origin;
 
     private String type;
 
@@ -28,13 +28,13 @@ public class Item {
     public Item() {
     }
 
-    public Item(String name, double weight, double height, String imageUrl, int count, String from, String type, double price) {
+    public Item(String name, double weight, double height, String imageUrl, int count, String origin, String type, double price) {
         this.name = name;
         this.weight = weight;
         this.height = height;
         this.imageUrl = imageUrl;
         this.count = count;
-        this.from = from;
+        this.origin = origin;
         this.type = type;
         this.price = price;
     }
@@ -87,12 +87,12 @@ public class Item {
         this.count = count;
     }
 
-    public String getFrom() {
-        return from;
+    public String getOrigin() {
+        return origin;
     }
 
-    public void setFrom(String from) {
-        this.from = from;
+    public void setOrigin(String origin) {
+        this.origin = origin;
     }
 
     public String getType() {
