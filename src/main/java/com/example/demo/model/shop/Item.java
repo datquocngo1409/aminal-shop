@@ -3,8 +3,8 @@ package com.example.demo.model.shop;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "tbl_Product")
-public class Product {
+@Table(name = "tbl_Item")
+public class Item {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
@@ -25,10 +25,10 @@ public class Product {
 
     private double price;
 
-    public Product() {
+    public Item() {
     }
 
-    public Product(String name, double weight, double height, String imageUrl, int count, String from, String type, double price) {
+    public Item(String name, double weight, double height, String imageUrl, int count, String from, String type, double price) {
         this.name = name;
         this.weight = weight;
         this.height = height;

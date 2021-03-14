@@ -17,15 +17,15 @@ public class OrderDetail {
     private User customer;
 
     @ManyToOne
-    private Product product;
+    private Item item;
 
     public OrderDetail() {
     }
 
-    public OrderDetail(int quantity, User customer, Product product) {
+    public OrderDetail(int quantity, User customer, Item item) {
         this.quantity = quantity;
         this.customer = customer;
-        this.product = product;
+        this.item = item;
     }
 
     public Long getId() {
@@ -52,11 +52,11 @@ public class OrderDetail {
         this.customer = customer;
     }
 
-    public Product getProduct() {
-        return product;
+    public Item getProduct() {
+        return item;
     }
 
-    public void setProduct(Product product) {
-        this.product = product;
+    public void setProduct(Item item) {
+        this.item = item;
     }
 }
